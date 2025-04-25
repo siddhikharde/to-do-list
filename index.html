@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="m-0 p-0 ">
+    <div class="container bg-#[6C4AB6] flex flex-col items-center justify-center min-h-screen ">
+        <div class="stats-container bg-[#F5F3FF] shadow-md rounded-lg p-[10px]  w-96 border border-2 border-[#6C4AB6] flex flex-col md:flex-row items-center gap-10 justify-center">
+            <div class="details">
+                <h1 class="text-2xl font-bold text-[#2C2C2C]">Todo Done</h1>
+                <p class="text-[20px] font-bold text-[#6E6E6E]">keep it up!</p>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="stats-number">
+                <p class="numbers h-[100px] w-[100px] rounded-[50%] bg-purple-500 items-center flex justify-center font-bold">1 / 2</p>
+            </div>
+        </div>
+        <form action="" class=" flex justify-center items-center mt-4 gap-2" >
+            <input type="text" placeholder="Add a new task here" class="border border-[#6C4AB6] border-2 rounded-lg  bg-[#F5F3FF] p-2 mt-4 w-80" required>
+            <button type="submit" class="text-2xl bg-[#F5F3FF] border border-2 border-[#6C4AB6] p-1 rounded-lg mt-4">+</button>
+        </form>
+        <ul class="task-list">
+
+        </ul>
+    </div>
 </body>
 </html>
