@@ -7,26 +7,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="m-0 p-0 ">
-    <div class="container bg-#[6C4AB6] flex flex-col items-center justify-center min-h-screen ">
-        <div class="stats-container bg-[#F5F3FF] shadow-md rounded-lg p-[10px]  w-96 border border-2 border-[#6C4AB6] flex flex-col md:flex-row items-center gap-10 justify-center">
-            <div class="details">
-                <h1 class="text-2xl font-bold text-[#2C2C2C]">Todo Done</h1>
+    <div class="container  bg-#[6C4AB6] flex flex-col items-center justify-center h-screen w-screen">
+        <div class="stats-container cursor-pointer bg-[#F5F3FF]  hover:border-[#8B5CF6] shadow-md rounded-lg p-[10px] hover:drop-shadow hover:drop-shadow-md hover:drop-shadow-purple-500 w-90 border border-2 border-[#6C4AB6] flex flex- md:flex-row items-center  justify-between transition-all ease-in-out duration-300 ">
+            <div class="details w-[100%]">
+                <h1 class="text-[1.7rem] font-bold text-[#2C2C2C]">Todo Done</h1>
                 <p class="text-[20px] font-bold text-[#6E6E6E]">keep it up!</p>
-                <div class="progressbar">
-                    <div class="progress"></div>
+                <div class="progressbar w-[100%] h-[12px] mt-2 overflow-hidden rounded-full shadow-inner bg-[#E0D7F3]">
+                    <div class="progress bg-purple-700 rounded-full progress-fill h-[100%] w-[70%] transition-all ease duration-300"></div>
                 </div>
             </div>
             <div class="stats-number">
-                <p class="numbers h-[100px] w-[100px] rounded-[50%] bg-purple-500 items-center flex justify-center font-bold">1 / 2</p>
+                <p class="numbers h-[100px] w-[100px] ml-5 rounded-[50%] bg-purple-500 items-center flex justify-center font-bold">1 / 2</p>
             </div>
         </div>
-        <form action="" class=" flex justify-center items-center mt-4 gap-2" >
-            <input type="text" placeholder="Add a new task here" class="border border-[#6C4AB6] border-2 rounded-lg  bg-[#F5F3FF] p-2 mt-4 w-80" required>
-            <button type="submit" class="text-2xl bg-[#F5F3FF] border border-2 border-[#6C4AB6] p-1 rounded-lg mt-4">+</button>
+        <form action="" class=" flex justify-center items-center w-[100%] mt-4 gap-2" >
+            <input id="taskInput" type="text" placeholder="Add a new task here" class=" border-2 border-[#6C4AB6] rounded-lg  bg-[#F5F3FF] p-2 mt-4 w-80 focus:outline-none focus:ring-0 focus:border-[#6C4AB6] transition-all ease-in-out duration-300 hover:border-[#8B5CF6] " required>
+            <button id="new-task" type="submit" class="text-2xl text-purple-900  bg-[#F5F3FF] border border-2 border-[#6C4AB6] p-1 flex justify-center items-center rounded-lg cursor-pointer mt-4  transition-all ease-in-out duration-300 hover:border-[#8B5CF6] ">+</button>
         </form>
         <ul class="task-list">
 
         </ul>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
